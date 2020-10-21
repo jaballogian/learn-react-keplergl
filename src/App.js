@@ -11,6 +11,8 @@ const reducers = combineReducers({
   keplerGl: keplerGlReducer
 })
 
+const store = createStore(reducers, {}, applyMiddleware(taskMiddleware))
+
 function App() {
   return (
     <div>
