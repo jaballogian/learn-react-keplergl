@@ -2,10 +2,7 @@ import React from 'react'
 import keplerGlReducer from "kepler.gl/reducers"
 import { createStore, combineReducers, applyMiddleware } from "redux"
 import { taskMiddleware } from "react-palm/tasks"
-import { Provider, useDispatch } from "react-redux"
-import KeplerGl from "kepler.gl"
-import { addDataToMap } from "kepler.gl/actions"
-import useSwr from "swr"
+import { Provider } from "react-redux"
 import Map from './Components/Map'
 
 const reducers = combineReducers({
