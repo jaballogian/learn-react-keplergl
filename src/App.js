@@ -7,6 +7,10 @@ import KeplerGl from "kepler.gl"
 import { addDataToMap } from "kepler.gl/actions"
 import useSwr from "swr"
 
+const reducers = combineReducers({
+  keplerGl: keplerGlReducer
+})
+
 function App() {
   return (
     <div>
